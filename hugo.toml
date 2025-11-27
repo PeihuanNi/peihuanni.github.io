@@ -6,7 +6,6 @@ theme = 'ananke'
 [params]
     description = "Peihuan Ni's Personal Website"
     
-    # 修正点：去掉 static，保留开头的斜杠
     featured_image = "/images/river.jpg"
 
     [[params.ananke_socials]]
