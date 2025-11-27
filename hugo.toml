@@ -1,4 +1,33 @@
 baseURL = 'https://peihuanni.github.io/'
-languageCode = 'zh-cn'
-title = 'My Personal Site'
+languageCode = 'en-us'
+title = 'Peihuan Ni'
 theme = 'ananke'
+
+[params]
+    description = "Peihuan Ni's Personal Website"
+    
+    # 修正点：去掉 static，保留开头的斜杠
+    featured_image = "/images/river.jpg"
+
+    [[params.ananke_socials]]
+        name = "github"
+        url = "https://github.com/PeihuanNi"
+
+[menu]
+    [[menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "about"
+        name = "About Me"
+        url = "/about/"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "publications"
+        name = "Publications"
+        url = "/publications/"
+        weight = 3
