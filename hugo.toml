@@ -1,0 +1,4 @@
+baseURL = 'https://peihuanni.github.io/'
+languageCode = 'zh-cn'
+title = 'My Personal Site'
+theme = 'ananke'
