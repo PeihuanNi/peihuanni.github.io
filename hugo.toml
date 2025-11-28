@@ -2,7 +2,20 @@ baseURL = 'https://peihuanni.github.io/'
 languageCode = 'en-us'
 title = 'Peihuan Ni'
 theme = 'ananke'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+ignoreLogs = ['warning-goldmark-raw-html']
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  mainSections = ["publications"]
+  custom_css = ["custom.css"]
+  [params.ananke]
+    show_recent_posts = true
 
 [params.ananke.social.follow]
 networks = ["github"]
@@ -10,21 +23,51 @@ networks = ["github"]
 [params.ananke.social.github]
 username = "PeihuanNi"
 
-[menu]
-    [[menu.main]]
-        identifier = "about"
-        name = "About Me"
-        url = "/about/"
-        weight = 1
+[languages]
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+    contentDir = 'content/en'
+    title = 'Peihuan Ni'
 
-    [[menu.main]]
-        identifier = "publications"
-        name = "Publications"
-        url = "/publications/"
-        weight = 2
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/en/about/"
+      weight = 1
 
-    [[menu.main]]
-        identifier = "projects"
-        name = "Projects"
-        url = "/projects/"
-        weight = 3
+    [[languages.en.menu.main]]
+      identifier = "publications"
+      name = "Publications"
+      url = "/en/publications/"
+      weight = 2
+
+    [[languages.en.menu.main]]
+      identifier = "projects"
+      name = "Projects"
+      url = "/en/projects/"
+      weight = 3
+
+  [languages.zh]
+    languageName = '简体中文'
+    weight = 2
+    contentDir = 'content/zh'
+    title = '倪培洹'
+
+    [[languages.zh.menu.main]]
+      identifier = "about"
+      name = "关于我"
+      url = "/zh/about/"
+      weight = 1
+
+    [[languages.zh.menu.main]]
+      identifier = "publications"
+      name = "发表论文"
+      url = "/zh/publications/"
+      weight = 2
+
+    [[languages.zh.menu.main]]
+      identifier = "projects"
+      name = "项目"
+      url = "/zh/projects/"
+      weight = 3

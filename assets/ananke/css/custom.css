@@ -1,0 +1,19 @@
+/* 文章列表标题左对齐 */
+.nested-links,
+article.cf,
+.lh-copy {
+    text-align: left !important;
+}
+
+/* 加宽内容区域 */
+.measure-wide {
+    max-width: 60em !important;
+}
+
+.mw7 {
+    max-width: 80% !important;
+}
+
+.center.measure-wide {
+    max-width: 70em !important;
+}

@@ -1,0 +1,28 @@
+{{/* 语言切换器 - 只显示其他语言的切换链接 */}}
+{{ if gt (len site.Languages) 1 }}
+<ul class="{{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
+    {{ range site.Languages }}
+    {{ $lang := . }}
+    {{ $isCurrent := eq .Lang $.Site.Language.Lang }}
+    {{ if not $isCurrent }}
+    <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+        {{/* 尝试找到当前页面的翻译版本 */}}
+        {{ $translationFound := false }}
+        {{ $translationURL := "" }}
+        {{ range $.Translations }}
+            {{ if eq .Lang $lang.Lang }}
+                {{ $translationFound = true }}
+                {{ $translationURL = .RelPermalink }}
+            {{ end }}
+        {{ end }}
+        {{ if $translationFound }}
+        <a class="hover-white white-90 no-underline" href="{{ $translationURL }}">{{ $lang.LanguageName }}</a>
+        {{ else }}
+        {{/* 如果没有翻译版本，链接到该语言的首页 */}}
+        <a class="hover-white white-90 no-underline" href="/{{ $lang.Lang }}/">{{ $lang.LanguageName }}</a>
+        {{ end }}
+    </li>
+    {{ end }}
+    {{ end }}
+</ul>
+{{ end }}
