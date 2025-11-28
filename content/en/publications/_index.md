@@ -1,7 +1,7 @@
 +++
 date = '2025-11-27T22:56:40+08:00'
 draft = false
-featured_image = "/images/river.jpg"
+featured_image = "/images/image.png"
 title = 'Publications'
 +++
 
