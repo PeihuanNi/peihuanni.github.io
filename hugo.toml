@@ -18,10 +18,22 @@ ignoreLogs = ['warning-goldmark-raw-html']
     show_recent_posts = true
 
 [params.ananke.social.follow]
-networks = ["github"]
+networks = ["github", "google-scholar"]
 
 [params.ananke.social.github]
 username = "PeihuanNi"
+
+[params.ananke.social.networks.google-scholar]
+slug = "google-scholar"
+label = "Google Scholar"
+color = "#4285f4"
+profile = "https://scholar.google.com/citations?user=aQbbQw0AAAAJ&hl=en"
+icon = "google-scholar"
+
+[params.ananke.social.google-scholar]
+username = "你的Google Scholar ID"
+
+
 
 [languages]
   [languages.en]
