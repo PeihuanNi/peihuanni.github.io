@@ -3,30 +3,28 @@ languageCode = 'en-us'
 title = 'Peihuan Ni'
 theme = 'ananke'
 
-[params]
-    description = "Peihuan Ni's Personal Website"
-    
-    featured_image = "/images/river.jpg"
 
-    [[params.ananke_socials]]
-        name = "github"
-        url = "https://github.com/PeihuanNi"
+[params.ananke.social.follow]
+networks = ["github"]
+
+[params.ananke.social.github]
+username = "PeihuanNi"
 
 [menu]
-    [[menu.main]]
-        identifier = "home"
-        name = "Home"
-        url = "/"
-        weight = 1
-
     [[menu.main]]
         identifier = "about"
         name = "About Me"
         url = "/about/"
-        weight = 2
+        weight = 1
 
     [[menu.main]]
         identifier = "publications"
         name = "Publications"
         url = "/publications/"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects/"
         weight = 3

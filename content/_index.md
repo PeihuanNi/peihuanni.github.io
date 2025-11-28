@@ -1,13 +1,13 @@
 ---
-title: "Peihuan Ni"
+title: "Welcome to Peihuan Ni's Personal Website"
 featured_image: "/images/river.jpg"
-description: "Welcome to Peihuan Ni's Personal Website"
+description: "Just Do It."
 ---
 
-Welcome to my personal website! I'm Peihuan Ni, and this is where I share my thoughts, work, and experiences.
+<div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
+    
+    <img src="/images/jlu.ai" alt="吉林大学校徽" style="width: 45%; border-radius: 10px;">
 
-## About This Site
+    <!-- <img src="/images/ucas-logo.jpg" alt="中国科学院大学校徽" style="width: 45%; border-radius: 10px;"> -->
 
-This website serves as my digital portfolio and blog, where you can learn more about my background, research, and publications.
-
-Feel free to explore the different sections using the navigation menu above.
+</div>
