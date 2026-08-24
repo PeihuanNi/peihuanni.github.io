@@ -160,3 +160,8 @@ span.highlight {
   color: #166534;
   border: 1px solid #bbf7d0;
 }
+.tag-algo {
+  background-color: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
