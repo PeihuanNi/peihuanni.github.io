@@ -109,6 +109,63 @@ h2 {
   font-size: 32px;
 }
 
+.contact-links {
+  text-align: center;
+}
+
+.phd-news {
+  display: flex;
+  gap: 16px;
+  margin: 10px 16px 14px;
+  padding: 18px 20px;
+  background: linear-gradient(135deg, #fff8e8 0%, #fffdf7 100%);
+  border: 1px solid #f4c66a;
+  border-left: 5px solid #e88b16;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(146, 64, 14, 0.1);
+}
+
+.phd-news-badge {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  padding: 4px 8px;
+  color: #fff;
+  background: #d86f0b;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.phd-news h2 {
+  color: #8a3f08;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.phd-news p {
+  margin: 9px 0 0;
+  line-height: 1.55;
+}
+
+@media (max-width: 600px) {
+  .phd-news {
+    display: block;
+    margin: 8px 10px 12px;
+    padding: 16px;
+  }
+
+  .phd-news-badge {
+    display: inline-block;
+    margin-bottom: 9px;
+  }
+
+  .phd-news h2 {
+    font-size: 19px;
+  }
+}
+
 .one {
   width: 160px;
   height: 160px;
