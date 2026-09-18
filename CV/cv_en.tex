@@ -1,0 +1,136 @@
+% English version of cv_4.tex
+\documentclass{resume}
+\usepackage[left=0.45in,top=0.35in,right=0.45in,bottom=0.35in]{geometry}
+\usepackage{fontspec}
+\setmainfont{LinLibertine_R.otf}[
+	BoldFont=LinLibertine_RB.otf,
+	ItalicFont=LinLibertine_RI.otf,
+	BoldItalicFont=LinLibertine_RBI.otf
+]
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=false,pdfborder={0 0 0},pdftitle={Peihuan Ni - Curriculum Vitae},pdfauthor={Peihuan Ni}}
+\setlist[itemize]{leftmargin=1.3em,itemsep=1pt,topsep=2pt,parsep=0pt,partopsep=0pt}
+\newenvironment{publicationentry}{\begin{list}{}{\setlength{\leftmargin}{0.6em}\setlength{\rightmargin}{0em}\setlength{\topsep}{3pt}\setlength{\partopsep}{0pt}\setlength{\parsep}{0pt}\setlength{\itemsep}{0pt}}\item[]}{\end{list}}
+\makeatletter
+\renewcommand{\printname}{\begingroup\centering{\MakeUppercase{\namesize\bfseries \@name}}\par\endgroup\nameskip}
+\makeatother
+\name{Peihuan Ni}
+\address{Institute of Automation, Chinese Academy of Sciences}
+\address{95 Zhongguancun East Road, Haidian District, Beijing, China}
+\address{+86 158 0375 7631 \\ \href{mailto:nipeihuan24@mails.ucas.ac.cn}{nipeihuan24@mails.ucas.ac.cn} \\ \href{https://peihuanni.github.io}{peihuanni.github.io}}
+\setlength{\parskip}{4pt}
+\renewcommand{\sectionskip}{\vspace{8pt}}
+\renewcommand{\sectionlineskip}{\vspace{5pt}}
+\begin{document}
+\fontsize{10}{12}\selectfont
+\begin{rSection}{Research Interests}
+AI infrastructure and distributed systems for large-model training and inference; efficient inference architectures for large language models and vision-language-action models; hardware accelerators and embodied artificial intelligence.
+\end{rSection}
+
+\begin{rSection}{Ph.D. Applications}
+Seeking Ph.D. opportunities in China and abroad for 2027 entry, with research interests in ML systems for training and inference acceleration, AI infrastructure, and computer architecture.
+\end{rSection}
+
+\begin{rSection}{Education}
+\textbf{University of Chinese Academy of Sciences} \hfill Sep. 2024 -- Jun. 2027 (expected)\\
+Master's student in Artificial Intelligence, School of Artificial Intelligence\\
+Institute of Automation, Chinese Academy of Sciences; Efficient Intelligent Computing and Learning Lab (CLab)\\
+Advisors: Jian Cheng and Gang Li \hfill GPA: 3.81
+
+\textbf{Jilin University} \hfill Sep. 2020 -- Jun. 2024\\
+Bachelor's degree in Microelectronics Science and Engineering\\
+College of Electronic Science and Engineering \hfill Advisor: Kaige Yan\\
+College English Test: CET-4: 603; CET-6: 553
+\end{rSection}
+
+\begin{rSection}{Research Experience}
+\textbf{First-Author Publications}
+\begin{publicationentry}
+\textbf{Peihuan Ni}, Zitao Mo, Tielong Liu, Hongli Wen, Zeyu Zhu, Minnan Pei, Junwen Si, Weifan Guan, Peisong Wang, Qinghao Hu, Gang Li and Jian Cheng.
+\textbf{APEX: Integer-only Non-linear Function Approximation for Efficient Cross-Modal Inference.}
+In \textbf{DATE 2026}. (CCF-B)
+\begin{itemize}
+\item Identified substantial differences in quantized data distributions across model modalities, leading to varying sensitivity to nonlinear approximation errors; retaining high precision uniformly incurs excessive computational bit widths and hardware costs.
+\item Proposed a unified integer-only architecture that merges the computation graphs of common nonlinear operators and uses bit-level pruning to reduce bit widths while preserving model accuracy.
+\item Improved task accuracy by up to approximately 0.7\% for language models and 1.3\% for vision models, while enabling near-lossless inference for multimodal models.
+\item Achieved area reduction factors of 1.73--8.71$\times$ and power reduction factors of 1.21--10.83$\times$ relative to existing methods.
+\end{itemize}
+\end{publicationentry}
+\begin{publicationentry}
+\textbf{Peihuan Ni}, Zeyu Zhu, Weifan Guan, Gang Li, Zitao Mo, Tielong Liu, Junwen Si, Qinghao Hu, Peisong Wang and Jian Cheng.
+\textbf{ACE-VLA: Action-Centric Evaluation for Token Pruning in Vision-Language-Action Models.}
+In \textbf{CoRL 2026}. (BAAI Class A)
+\begin{itemize}
+\item Identified that existing VLA pruning methods largely adopt text--vision attention metrics from VLMs, underusing task-phase and motion semantics encoded in action outputs.
+\item Proposed an action-centric gradient-based importance metric and a motion-trajectory-based dynamic token pool to reduce importance evaluation overhead.
+\item Modeled robot motion trends from a kinematic perspective to dynamically adjust pruning ratios beyond instantaneous motion states.
+\item Improved task success rates by approximately 1.4\% on $\pi_{0.5}$ and 2.2\% on $\pi_0$, with 1.33--1.57$\times$ inference speedups; outperformed existing baselines in overall performance on OpenVLA-OFT.
+\item Validated transferability through real-robot experiments and improved the interpretability of VLA token pruning.
+\end{itemize}
+\end{publicationentry}
+
+% \newpage
+
+\textbf{Co-Authored Publications}
+\begin{publicationentry}
+Zeyu Zhu, Gang Li, Minnan Pei, Zitao Mo, \textbf{Peihuan Ni}, Peisong Wang, Tielong Liu and Jian Cheng.
+\textbf{KL-MoE: A Hierarchical MoE Pruning Framework Exploiting KL Divergence.}
+In \textbf{DAC 2026}. (CCF-A)
+\end{publicationentry}
+\begin{publicationentry}
+Tielong Liu, Zeyu Zhu, Gang Li, Zitao Mo, Chen Bai, Junwen Si, \textbf{Peihuan Ni}, Minnan Pei, Peisong Wang, Zhuoran Song, Xiaoyao Liang and Jian Cheng.
+\textbf{FLUTE: A LUT-Based Floating-Point Engine for Efficient LLM Acceleration Exploiting Core-Tail Hierarchical Alignment.}
+In \textbf{MICRO 2026}. (CCF-A)
+\end{publicationentry}
+\begin{publicationentry}
+Junwen Si, Gang Li, Tielong Liu, \textbf{Peihuan Ni}, Minnan Pei, Zeyu Zhu, Zitao Mo, Peisong Wang, Zhongfeng Wang and Jian Cheng.
+\textbf{DOMI: A Dataflow Optimization Framework for Efficient Mamba Inference on FPGAs.}
+Submitted to \textbf{TCAD}. (CCF-A)
+\end{publicationentry}
+\begin{publicationentry}
+Zeyu Zhu, Gang Li, Peisong Wang, \textbf{Peihuan Ni}, Tielong Liu, Minnan Pei, Junwen Si, Zhuoran Song, Xiaoyao Liang and Jian Cheng.
+\textbf{DALI: A Workload-Aware Offloading Framework for Efficient MoE Inference on Local PCs.}
+Submitted to \textbf{ATC 2026}. (CCF-A)
+\end{publicationentry}
+\end{rSection}
+
+\begin{rSection}{Internship Experience}
+\textbf{Huawei, ICT BG} \hfill Jul. 2026 -- Jul. 2027\\
+\textit{LLM Inference System Acceleration on the Ascend 950 NPU}
+\begin{itemize}
+\item Analyze and optimize LLM inference on the Ascend 950 NPU, focusing on operator scheduling, on-chip dataflow, and compute resource utilization.
+\item Investigate bottlenecks across Cube and Vector units and the memory hierarchy, and explore system-level optimizations for MoE and long-context inference.
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Projects}
+\textbf{VLA Model Quantization and FPGA Edge Deployment} \hfill \textbf{Project Lead}
+\begin{itemize}
+\item Designed a W4A8 quantization scheme with 4-bit weights and 8-bit activations and KV cache, combined with integer-only nonlinear approximations for near-lossless edge inference.
+\item Implemented fused quantization and dequantization operators using FP16--INT8 multiply-accumulate (MAC) units, reducing intermediate writebacks and off-chip memory accesses while keeping more activations on chip.
+\item Reused FP16--INT8 MAC units for operators such as RoPE and reordered selected computations to improve compute-unit and on-chip data reuse.
+\item Designed bit-serial compute units for W4A8 mixed-precision matrix multiplication, a KV reordering module supporting different attention head dimensions, and crossbar-based data mapping from BRAM to the compute array.
+\item Designed a unified integer-only nonlinear unit supporting multiple operators with reduced hardware area and power consumption; results published at DATE 2026.
+\item Contributed to VLIW compiler design, with responsibility for on-chip dataflow, the instruction processor, and operator control modules; reduced the instruction count per model inference by over 32$\times$ using address offsets and multiple offset modes.
+\item Built a GPU-based bit-accurate simulator and verified consistency with Vivado module-level simulations and full-model execution on FPGA.
+\item Completed end-to-end FPGA deployment, including DMA memory-access debugging, HBM bandwidth optimization, VHK158 board data-path debugging, timing closure, and PetaLinux system builds.
+\end{itemize}
+\vspace{3pt}
+\textbf{LLM Analysis and Inference Optimization on the Ascend A5 NPU} \hfill \textbf{Project Lead}
+\begin{itemize}
+\item Analyzed bottlenecks caused by asymmetric throughput between matrix and vector compute units in the Ascend architecture, identifying nonlinear operator overhead, data movement, and idle compute resources in MoE inference.
+\item Explored fine-grained pipelining and overlapping of matrix multiplication and nonlinear computation to balance Cube and Vector workloads and improve overall hardware utilization.
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Honors and Awards}
+Outstanding Student, University of Chinese Academy of Sciences (2025)\\
+Third Prize, Intel Cup National Undergraduate Electronic Design Contest -- Invitational (2022)\\
+Second Prize, China Undergraduate Mathematical Contest in Modeling (2022)\\
+Third Prize, Chinese Mathematics Competitions for College Students (2023)
+\end{rSection}
+\begin{rSection}{Academic Service}
+Reviewer for WACV, EMNLP, CoRL and HPCA.
+\end{rSection}
+\end{document}
